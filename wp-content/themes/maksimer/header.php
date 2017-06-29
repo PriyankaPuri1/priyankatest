@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 		<?php wp_head(); ?>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <script type="text/javascript" src="assets/js/script.js"></script>
 	</head>
 	<body <?php body_class(); ?>>
