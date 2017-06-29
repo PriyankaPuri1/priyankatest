@@ -233,7 +233,7 @@ display: inline-block;
             linear-gradient(
                     rgba(0, 0, 0, 0.0),
                     rgba(0, 0, 0, 0.0)
-            ),url(/images/sno.jpg);
+            ),url(/wp-content/themes/maksimer/assets/images/sno.jpg);
     background-size: cover;
 
     margin: 10px 0 0 0px;
