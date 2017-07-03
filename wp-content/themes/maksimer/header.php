@@ -5,8 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 		<?php wp_head(); ?>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <script type="text/javascript" src="assets/js/script.js"></script>
+       <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
+        <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/script.js"></script>
 	</head>
 	<body <?php body_class(); ?>>
 		<a class="skip-link screen-reader-text" href="#main-menu-wrapper"><?php _e( 'Skip to navigation', 'maksimer_lang' ); ?></a>
@@ -17,7 +17,7 @@
 			<div class="wrapper">
 
 				<div class="logo">
-                    <a href="#"><img src="images/logo.jpg"></a>
+                    <a href="#"><img src="<?php echo get_template_directory_uri ();?>/assets/images/logo.jpg"></a>
 
                     <!--	<?php
 							if ( has_custom_logo() ) {
@@ -32,21 +32,61 @@
 
 				<nav class="main-menu" id="main-menu-wrapper" role="navigation">
                     <ul>
-                        <a href="#">  <li class="menu"> <img src="images/eng2.jpg"> </li></a>
-                        <a href="#">  <li class="menu"> <img src="images/search1.jpg"> </li></a>
-                        <a href="#">  <li class="menu"> <img src="images/meny1.jpg"> </li></a>
+                       <div class="container">
+                        <li class="menu">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eng2.jpg">
+                            <div id="id01" class="w3-modal">
+                                <div class="w3-modal-content">
+                                    <div class="w3-container">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+
+
+										   <h2>About us</h2>
+										   <p>form</p>
+										   <p>contact us</p>
+                                    </div>
+                                </div>
+
+                        </li>
+                       </div>
+
+                          <li class="menu"> <img src="<?php echo get_template_directory_uri();?>/assets/images/search1.jpg"> </li>
+                          <li class="menu"> <img src="<?php echo get_template_directory_uri ();?>/assets/images/meny1.jpg"> </li>
+
                     </ul>
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => false, 'fallback_cb' => false ) ); ?>
 				</nav>
+            </div>
 
 
 			</div>
             <div id="slideshow">
-                <img class="mySlides" src="assets/images/carousel.jpg">
-                <img class="mySlides" src="assets/images/carousel.jpg">
-                <img class="mySlides"src="assets/images/carousel.jpg">
+                <img class="mySlides" src="<?php echo get_template_directory_uri ();?>/assets/images/carousel.jpg">
+                <img class="mySlides" src="<?php echo get_template_directory_uri ();?>/assets/images/carousel.jpg">
+                <img class="mySlides"src="<?php echo get_template_directory_uri ();?>/assets/images/carousel.jpg">
             </div>
         </header>
+
+       <!-- Created by maksimer on 28.06.2017.*/-->
+ <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+ </script>
+
+
+
 
 
         <main role="main" id="main-content" class="main-content-wrap">
@@ -58,20 +98,20 @@
                     <div class="wrapper">
                         <div class="utstyr">
                             <h4>fjellski</h4>
-                            <img src="assets/images/fjell.jpg">
+                            <img src="<?php echo get_template_directory_uri ();?>/assets/images/fjell.jpg">
                         </div>
                         <div class="utstyr">
                             <h4>toppturski</h4>
-                            <img src="assets/images/toppturski2.jpg"></div>
+                            <img src="<?php echo get_template_directory_uri ();?>/assets/images/toppturski2.jpg"></div>
                         <div class="utstyr">
                             <h4>turski</h4>
-                            <img src="assets/images/turski.jpg"></div>
+                            <img src="<?php echo get_template_directory_uri ();?>/assets/images/turski.jpg"></div>
                         <div class="utstyr">
                             <h4>skistaver</h4>
-                            <img src="assets/images/skistaver2.jpg"></div>
+                            <img src="<?php echo get_template_directory_uri ();?>/assets/images/skistaver2.jpg"></div>
                         <div class="utstyr">
                             <h4>skifeller</h4>
-                            <img src="assets/images/ski.jpg"></div>
+                            <img src="<?php echo get_template_directory_uri ();?>/assets/images/ski.jpg"></div>
                     </div>
 
                 </div>
@@ -80,19 +120,19 @@
 
                     <div class="col-md-1" >
 
-                        <img class="nyhet" src="assets/images/nyhet.jpg">
-                        <img class="circle" src="assets/images/stål.jpg">
+                        <img class="nyhet" src="<?php echo get_template_directory_uri ();?>/assets/images/nyhet.jpg">
+                        <img class="circle" src="<?php echo get_template_directory_uri ();?>/assets/images/stål.jpg">
                         <p class="white">Breidablikk jaktski m/fellelås</p>
                         <p class="blue">Allsidig jaktski uten stålkant</p>
-                        <p class="white1">  <img class="felle" src="assets/images/mark.jpg">
+                        <p class="white1">  <img class="felle" src="<?php echo get_template_directory_uri ();?>/assets/images/mark.jpg">
                             fellelås
-                            <img class="felle" src="assets/images/mark.jpg">smørbar/sintret
+                            <img class="felle" src="<?php echo get_template_directory_uri ();?>/assets/images/mark.jpg">smørbar/sintret
                         </p> <br>
-                        <img class="les" src="assets/images/lesmer.jpg">
+                        <img class="les" src="<?php echo get_template_directory_uri ();?>/assets/images/lesmer.jpg">
 
                     </div>  <!--bluetext end-->
                     <div class="col-md-2">
-                        <img class="ski" src="assets/images/skiutstyr.jpg">
+                        <img class="ski" src="<?php echo get_template_directory_uri ();?>/assets/images/skiutstyr.jpg">
                     </div>
                 </div>
                 </div><!--twocolumnsend-->
@@ -103,10 +143,10 @@
                         </div>
                         <div class="sondre">
 
-                            <div class="prod" ><img src="assets/images/first.jpg"> </div>
-                            <div class="prod" ><img src="assets/images/andre.jpg"> </div>
-                            <div class="prod" ><img src="assets/images/three.jpg"></div>
-                            <div class="prod" ><img src="assets/images/forth.jpg"> </div>
+                            <div class="prod" ><img src="<?php echo get_template_directory_uri ();?>/assets/images/first.jpg"> </div>
+                            <div class="prod" ><img src="<?php echo get_template_directory_uri ();?>/assets/images/andre.jpg"> </div>
+                            <div class="prod" ><img src="<?php echo get_template_directory_uri ();?>/assets/images/three.jpg"></div>
+                            <div class="prod" ><img src="<?php echo get_template_directory_uri ();?>/assets/images/forth.jpg"> </div>
 
 
                         </div> <!--productsend-->
@@ -124,10 +164,10 @@
                         </div>
                         <div class="ambass" style="padding-top:80px;">
 
-                            <div class="ambassadør"> <img src="assets/images/gladguttene.jpg"></div>
-                            <div class="ambassadør">  <img src="assets/images/alexander.jpg"></div>
-                            <div class="ambassadør"> <img src="assets/images/elise.jpg"></div>
-                            <div class="ambassadør"> <img src="assets/images/cecilie.jpg"></div>
+                            <div class="ambassadør"> <img src="<?php echo get_template_directory_uri ();?>/assets/images/gladguttene.jpg"></div>
+                            <div class="ambassadør">  <img src="<?php echo get_template_directory_uri ();?>/assets/images/alexander.jpg"></div>
+                            <div class="ambassadør"> <img src="<?php echo get_template_directory_uri ();?>/assets/images/elise.jpg"></div>
+                            <div class="ambassadør"> <img src="<?php echo get_template_directory_uri ();?>/assets/images/cecilie.jpg"></div>
 
                         </div>
                         <hr style="margin:10px 37px 0 65px;">

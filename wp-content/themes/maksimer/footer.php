@@ -18,8 +18,8 @@
                 </div>
                 <div class="siste">
                     <h4>FØLG OSS PÅ</h4>
-                    <img src="../images/facebook.jpg">FACEBOOK<br><br>
-                    <img src="../images/insta.jpg">INSTAGRAM
+                    <img src="<?php echo get_template_directory_uri ();?>/assets/images/facebook.jpg">FACEBOOK<br><br>
+                    <img src="<?php echo get_template_directory_uri ();?>/assets/images/insta.jpg">INSTAGRAM
 
                 </div>
 

@@ -1,7 +1,7 @@
 /**
  * Created by maksimer on 28.06.2017.
  */
-/*<script>
+
 var myIndex = 0;
 carousel();
 
@@ -16,6 +16,6 @@ function carousel() {
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
-</script>*/
+
 
 
