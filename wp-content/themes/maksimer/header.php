@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html
+    <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 		<?php wp_head(); ?>
        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
-        <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/script.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/min/script.js"></script>
 	</head>
 	<body <?php body_class(); ?>>
 		<a class="skip-link screen-reader-text" href="#main-menu-wrapper"><?php _e( 'Skip to navigation', 'maksimer_lang' ); ?></a>
@@ -32,26 +33,37 @@
 
 				<nav class="main-menu" id="main-menu-wrapper" role="navigation">
                     <ul>
-                       <div class="container">
+
                         <li class="menu">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eng2.jpg">
-                            <div id="id01" class="w3-modal">
-                                <div class="w3-modal-content">
-                                    <div class="w3-container">
-                                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-
-
-										   <h2>About us</h2>
-										   <p>form</p>
-										   <p>contact us</p>
-                                    </div>
-                                </div>
-
                         </li>
-                       </div>
 
                           <li class="menu"> <img src="<?php echo get_template_directory_uri();?>/assets/images/search1.jpg"> </li>
-                          <li class="menu"> <img src="<?php echo get_template_directory_uri ();?>/assets/images/meny1.jpg"> </li>
+                          <li class="menu">
+                          <img id="myImage" src="<?php echo get_template_directory_uri ();?>/assets/images/meny1.jpg" alt="menu">
+                          </li>
+                           <div id="myModal" class="modal" style="display:none">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>About oss</h3>
+                            </div>
+                           </div>
+                        <script>
+                            var modal = document.getElementById('myModal');
+                            var img = document.getElementById('myImage');
+                            var span = document.getElementsByClassName("close")[0];
+                            img.onclick = function()
+                            {
+                                modal.style.display = "block";
+
+                            }
+                            span.onclick =function()
+                            {
+                                    modal.style.display = "none";
+                                }
+
+
+                        </script>
 
                     </ul>
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => false, 'fallback_cb' => false ) ); ?>
@@ -84,10 +96,6 @@
         setTimeout(carousel, 2000); // Change image every 2 seconds
         }
  </script>
-
-
-
-
 
         <main role="main" id="main-content" class="main-content-wrap">
 
