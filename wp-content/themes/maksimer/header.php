@@ -45,7 +45,8 @@
                            <div id="myModal" class="modal" style="display:none">
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                <h3>About oss</h3>
+                                <a href=" http://priyankatest.utvikl.es/about-us/"><h3>About oss</h3></a>
+
                             </div>
                            </div>
                         <script>
@@ -74,7 +75,7 @@
 			</div>
             <div id="slideshow">
                 <img class="mySlides" src="<?php echo get_template_directory_uri ();?>/assets/images/carousel.jpg">
-                <img class="mySlides" src="<?php echo get_template_directory_uri ();?>/assets/images/carousel.jpg">
+                <img class="mySlides" src="<?php echo get_template_directory_uri ();?>/assets/images/carousel1.jpg">
                 <img class="mySlides"src="<?php echo get_template_directory_uri ();?>/assets/images/carousel.jpg">
             </div>
         </header>
