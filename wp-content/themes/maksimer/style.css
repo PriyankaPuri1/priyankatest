@@ -109,14 +109,12 @@ nav .modal-content .close:hover,
 }
 
 
-#slideshow .mySlides {
+ .slideshow {
         max-width: 100%;
         display:inline;
     margin-top: 21px;
     }
-#slideshow img{
-    width:100%;
-}
+
 
 
     /*------------------Section------------*/

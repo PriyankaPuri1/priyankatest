@@ -45,9 +45,9 @@
                            <div id="myModal" class="modal" style="display:none">
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                <a href="http://priyankatest.utvikl.es/home/">HOME</a>
-                                <a href=" http://priyankatest.utvikl.es/about-us/">About oss</a>
-                                <a href=" http://priyankatest.utvikl.es/contact/">Contact</a>
+                                <a href="http://priyankatest.utvikl.es/home/">HOME</a>  <br>
+                                <a href=" http://priyankatest.utvikl.es/about-us/">About oss</a> <br>
+                                <a href=" http://priyankatest.utvikl.es/contact/">Contact</a> <br>
 
 
                             </div>
@@ -75,15 +75,19 @@
             </div>
             </div>
         </header>
-            <div id="slideshow">
+		<div class="slideshow"><?php
+		echo do_shortcode("[metaslider id=45]");
+		?>
+        </div>
+          <!--  <div id="slideshow">
                 <img class="mySlides" src="<?php echo get_template_directory_uri ();?>/assets/images/carousel.jpg">
                 <img class="mySlides" src="<?php echo get_template_directory_uri ();?>/assets/images/carousel1.jpg">
                 <img class="mySlides"src="<?php echo get_template_directory_uri ();?>/assets/images/carousel.jpg">
-            </div>
+            </div>-->
 
 
        <!-- Created by maksimer on 28.06.2017.*/-->
- <script>
+ <!--<script>
         var myIndex = 0;
         carousel();
 
@@ -98,7 +102,7 @@
         x[myIndex-1].style.display = "block";
         setTimeout(carousel, 2000); // Change image every 2 seconds
         }
- </script>
+ </script> -->
 
         <main role="main" id="main-content" class="main-content-wrap">
 
