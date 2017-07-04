@@ -62,7 +62,11 @@ Text Domain: maksimer_lang
         /*position:fixed;
         top:0;
         /*display:none;!important*/
-        /*padding:21px;*/
+        /*padding:21px;*/  }
+    @media screen and (min-width:480px)
+    {
+        nav .menu {width: 70px; margin-top:51px; display:inline-block;}
+        header.logo {padding-top:0;}
     }
 
 nav .main-menu ul .modal {

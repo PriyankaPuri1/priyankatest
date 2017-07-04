@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 		<?php wp_head(); ?>
-       <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
+       <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css">
         <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/min/script.js"></script>
 	</head>
 	<body <?php body_class(); ?>>
@@ -45,7 +45,10 @@
                            <div id="myModal" class="modal" style="display:none">
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                <a href=" http://priyankatest.utvikl.es/about-us/"><h3>About oss</h3></a>
+                                <a href="http://priyankatest.utvikl.es/home/">HOME</a>
+                                <a href=" http://priyankatest.utvikl.es/about-us/">About oss</a>
+                                <a href=" http://priyankatest.utvikl.es/contact/">Contact</a>
+
 
                             </div>
                            </div>
@@ -70,15 +73,14 @@
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => false, 'fallback_cb' => false ) ); ?>
 				</nav>
             </div>
-
-
-			</div>
+            </div>
+        </header>
             <div id="slideshow">
                 <img class="mySlides" src="<?php echo get_template_directory_uri ();?>/assets/images/carousel.jpg">
                 <img class="mySlides" src="<?php echo get_template_directory_uri ();?>/assets/images/carousel1.jpg">
                 <img class="mySlides"src="<?php echo get_template_directory_uri ();?>/assets/images/carousel.jpg">
             </div>
-        </header>
+
 
        <!-- Created by maksimer on 28.06.2017.*/-->
  <script>
