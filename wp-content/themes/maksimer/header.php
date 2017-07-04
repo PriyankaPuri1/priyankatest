@@ -76,7 +76,7 @@
             </div>
         </header>
 		<div class="slideshow"><?php
-		echo do_shortcode("[metaslider id=45]");
+		echo do_shortcode("[metaslider id=45 percentwidth=100]");
 		?>
         </div>
           <!--  <div id="slideshow">
@@ -172,48 +172,6 @@
                     <h4>Hardinglaup 2016</h4>
                     <p>Er du robust til nok å takle h</p>
                 </div>
-                <div id="ambassador">
-                    <div class="wrapper">
-                        <div class="heading">
-                            <h3>AMBASSADØRER</h3>
-                        </div>
-                        <div class="ambass" style="padding-top:80px;">
-
-                            <div class="ambassadør"> <img src="<?php echo get_template_directory_uri ();?>/assets/images/gladguttene.jpg"></div>
-                            <div class="ambassadør">  <img src="<?php echo get_template_directory_uri ();?>/assets/images/alexander.jpg"></div>
-                            <div class="ambassadør"> <img src="<?php echo get_template_directory_uri ();?>/assets/images/elise.jpg"></div>
-                            <div class="ambassadør"> <img src="<?php echo get_template_directory_uri ();?>/assets/images/cecilie.jpg"></div>
-
-                        </div>
-                        <hr style="margin:10px 37px 0 65px;">
-                    </div>
-                </div> <!--ambassadorend-->
-                <div id="frontside">
-                    <div class="wrapper">
-                        <div class="for">
-                            Forside
-                        </div>
-                        <div class="middle">
-                            <p>  ski<br>
-                            <p class="small">   Fjellski<br>
-                                Toppturski<br>
-                                Turski<br></p>
-                            Skistaver<br>
-                            Skifeller</p>
-                        </div>
-                        <div class="mid">
-                            Aktuelt<br>
-                            Ambassador<br>
-                            Turer<br>
-                            Butikker
-                        </div>
-                        <div class="last">
-                            Om åsnes <br>
-                            Årblog
-                        </div>
-                    </div>
-
-                </div> <!--frontsideend-->
                 </div>
 
 
