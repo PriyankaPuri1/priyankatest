@@ -31,7 +31,22 @@ header{
   padding: 10px;
   margin:0px;
   width:25%;
-}}
+}
+nav #main-menu-wrapper{
+  float:right;
+  margin-right:20px;
+  ul{
+    float:right;
+  }
+  li {
+    display:inline-block;
+    text-decoration: none;
+
+
+  }
+}
+}
+
 #menu .navigate
 {
   float:right;

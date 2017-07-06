@@ -2,6 +2,7 @@
  * Required plugins
  * SCSS:
  */
+var themename   = 'maksimer';
 var gulp          = require( 'gulp' );
 var postcss       = require( 'gulp-postcss' );
 var sass          = require( 'gulp-sass' );
@@ -79,7 +80,7 @@ gulp.task( 'browser-sync', function() {
 	];
 
 	browserSync.init( files, {
-		proxy: 'wp.dev',
+		proxy: 'http://priyankatest.utvikl.es/',
 		open: true,
 		injectChanges: true,
 		reloadDelay: 500
