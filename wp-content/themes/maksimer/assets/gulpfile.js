@@ -80,7 +80,7 @@ gulp.task( 'browser-sync', function() {
 	];
 
 	browserSync.init( files, {
-		proxy: 'http://priyankatest.utvikl.es/',
+		proxy: 'http://priyankatest.utvikl.es',
 		open: true,
 		injectChanges: true,
 		reloadDelay: 500

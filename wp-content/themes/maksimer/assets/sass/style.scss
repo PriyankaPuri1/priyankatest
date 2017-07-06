@@ -31,18 +31,18 @@ header{
   padding: 10px;
   margin:0px;
   width:25%;
-}
-nav #main-menu-wrapper{
+}}
+nav {
   float:right;
+  width:70%;
   margin-right:20px;
-  ul{
-    float:right;
-  }
-  li {
+    ul{
+      float:right;
+      /*margin:10px 20px 0 0;*/
+      padding:0;
+  .menu {
     display:inline-block;
     text-decoration: none;
-
-
   }
 }
 }
