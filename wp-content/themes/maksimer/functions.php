@@ -75,6 +75,8 @@
 	 * Enqueue's all the scripts
 	*/
 	function maksimer_enqueue_scripts() {
+		// Enqueue google fonts : Source sans Pro and PT serif
+	//	wp_enqueue_style ('fonts' ,'https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Source+Sans+Pro:400,700,700i');
 		wp_enqueue_style( 'style', get_stylesheet_uri(), false, filemtime( get_theme_file_path( 'style.css' ) ), 'all' );
 		wp_enqueue_script( 'maksimer', get_theme_file_uri( 'assets/js/min/maksimer.min.js' ), array( 'jquery' ), filemtime( get_theme_file_path( 'assets/js/min/maksimer.min.js' ) ) );
 

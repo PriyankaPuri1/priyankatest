@@ -1,6 +1,18 @@
 /*
  * Main wrapper
 */
+body{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	position:absolute;
+}
+#main{
+	font-size:0;
+	display:inline-block;
+	/*vertical-align:top;*/
+	line-height:0;
+}
 .wrapper {
 	@include clearfix;
 	max-width: 1140px;

@@ -1,6 +1,10 @@
 /*
  * Headings
 */
+/*h1, h2, h3, h4, h5, h6
+{
+	font-family: $font_sans;
+}*/
 h1,
 .h1 {
 	@include vw(5vw, 32px, 40px, 40px);

@@ -18,3 +18,197 @@ Text Domain: maksimer_lang
 @import 'layout/wrappers';
 @import 'layout/grid';
 @import 'components/elements';
+
+
+
+
+header{
+   width:100%;
+  max-width:1440px;
+  .logo
+{
+  float: left;
+  padding: 10px;
+  margin:0px;
+  width:25%;
+}}
+#menu .navigate
+{
+  float:right;
+  margin-right:40px;
+  overflow:hidden;
+  margin-top:25px;
+  display:inline;
+  list-style-type: none;
+
+
+}
+#menu .navigate .menu
+{
+  display:inline;
+  list-style-type: none;
+
+}
+
+
+/*#slideshow{
+  max-width:100%;
+  margin-top:-5px;
+   height:300px;
+}
+#slideshow .mySlides{
+   width:100%;
+
+}*/
+
+.fjellutstyr{
+
+  margin-top:-1px;
+  background-color:#07253f;
+  height:150px;
+
+
+}
+.fjellutstyr ul{
+  height:200px;
+  padding-top:2px;
+  margin-left:10px;
+
+
+}
+
+.fjellutstyr ul  .utstyr {
+  list-style:none;
+  display: inline;
+  width:20%;
+  padding:20px;
+  margin-left:60px;
+  height:50px;
+}
+.row-fluid{
+  width:100%;
+  /*padding-top:26px;*/
+  margin-top:0px;
+  height:320px;
+}
+.row-fluid .col-md-1 {
+  float:left;
+  width:40%;
+  height:300px;
+  background-color:#114a7f;
+  margin-top: 0;
+
+
+}
+.col-md-1 .nyhet{
+  padding-left:30px;
+}
+.col-md-1 .white
+{
+  color:white;
+  padding-left:38px;
+  font-size: 18px;
+
+}
+.col-md-1 .blue
+{
+  color:#89a4bf;
+  padding-left:38px;
+  font-size: 18px;
+}
+.row-fluid .col-md-2 {
+  float: right;
+  margin-left: -107px;
+  margin-top: 0px;
+  width:60%;
+  height:300px;
+
+}
+.row-fluid .col-md-2 .ski{
+  float:right;
+  width:60%;
+  height:300px;
+
+
+
+}
+#produkt
+{
+  /*padding-top:40px;*/
+  height:400px;
+  width:100%;
+}
+.products{
+
+  padding-top:49px;
+  margin-top:0;
+  padding-left:40px;
+}
+
+
+.sondre ul{
+  padding:0 20px 0 20px;
+}
+.sondre ul .prod{
+  display:inline;
+  text-decoration:none;
+  width:20%;
+  padding:0 20px 0 20px;
+}
+.snow{
+
+  width:100%;
+}
+.snow .snow1
+{
+  height:300px;
+  width:100%;
+}
+#ambassador
+{
+  width:100%;
+  background-color:#114a7f;
+  margin-top:-25px;
+  /*height:800px;*/
+}
+#ambassador h3
+{
+  color:white;
+  /* padding-left:50px;*/
+  /*padding-top:10px;*/
+  padding:20px 0 10px 59px;
+  font-size:20px;
+}
+#ambassador .ambass
+{
+  /*background-color:#114a7f;*/
+  margin-top:-87px;
+  /*height:300px;*/
+}
+
+/*#ambassador #add .for
+{
+    height:200px;
+}*/
+/*#ambassador
+{
+    display:inline;
+    list-style-type:none;
+    width:15%;
+    height:200px;
+    padding:0 20px 0 20px;
+}*/
+
+#ambassador ul .ambassadør{
+  display:inline;
+  list-style-type:none;
+  width:15%;
+  /*height:150px;*/
+  padding:0 20px 0 20px;
+}
+/*#ambassador #one
+{
+    list-style-type:none;
+    color:white;
+    width:20%;
+}*/
